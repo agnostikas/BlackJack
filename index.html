@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BlackJack</title>
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container container-fluid">
+        <div class="row row-centered">
+            <div class="text" id="title">
+                <h2>BlackJack</h2>
+            </div>
+            <div class="text" id="dealerID">Dealer: <span id="dealerCount">?</span></div>
+            <div id="dealerArea"></div>
+        </div>
+        <div class="text" id="playerID">Player: <span id="playerCount"></span></div>
+        <div class="row row-centered" id="playerArea"></div>
+        <div class="row row-centered" id="messageContainer">
+            <div class="col-lg-8 card col-centered" id="message">
+                <p>Hello. &spades; &hearts; &clubs; &diams;</p>
+            </div>
+        </div>
+        <div class="row row-centered">
+            <div class="col-lg-3 col-centered">
+                <button id="hit" class="btn btn-block btn-lg btn-success">Hit Me!</button>
+            </div>
+            <div class="col-lg-3 col-centered">
+                <button id="stand" class="btn btn-block btn-lg btn-danger">Stand</button>
+            </div>
+            <div class="col-lg-3 col-centered">
+                <button id="redeal" class="btn btn-block btn-lg btn-info" disabled>Deal Again</button>
+            </div>
+            <div class="col-lg-3 col-centered">
+                <button id="newgame" class="btn btn-block btn-lg btn-warning" disabled>New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
